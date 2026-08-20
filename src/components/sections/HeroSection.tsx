@@ -1,5 +1,6 @@
 import type { ResolvedContent } from '@/lib/types'
 import styles from '@/styles/photos.module.css'
+import layout from '@/styles/layout.module.css'
 
 const DOWNLOAD_ICON = (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="square" aria-hidden="true">
@@ -10,7 +11,7 @@ const DOWNLOAD_ICON = (
 )
 
 export default function HeroSection({ content }: { content: ResolvedContent }) {
-  const { shared, variant, heroPhoto } = content
+  const { shared, heroPhoto } = content
 
   return (
     <section
@@ -96,13 +97,8 @@ export default function HeroSection({ content }: { content: ResolvedContent }) {
           {shared.artist}
         </h1>
         <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-end',
-            gap: 'clamp(24px,6vw,80px)',
-            flexWrap: 'wrap',
-          }}
+          className={layout.heroBottom}
+          style={{ gap: 'clamp(24px,6vw,80px)' }}
         >
           <p
             style={{
@@ -118,6 +114,7 @@ export default function HeroSection({ content }: { content: ResolvedContent }) {
             {shared.hook}
           </p>
           <p
+            className={layout.heroMeta}
             style={{
               fontFamily: "var(--font-mono), monospace",
               fontSize: '11px',
@@ -126,7 +123,6 @@ export default function HeroSection({ content }: { content: ResolvedContent }) {
               color: '#B0A79A',
               lineHeight: 2.1,
               margin: 0,
-              textAlign: 'right',
             }}
           >
             {shared.meta.map((line, i) => (

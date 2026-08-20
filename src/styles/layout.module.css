@@ -1,0 +1,89 @@
+/* ─── Labeled 2-column: 220px label / content ─── */
+.labeled {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+}
+
+@media (max-width: 680px) {
+  .labeled {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Track row: info / player ─── */
+.trackRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+
+@media (max-width: 680px) {
+  .trackRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Collaborator row: name / role ─── */
+.collaboratorRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: baseline;
+}
+
+@media (max-width: 680px) {
+  .collaboratorRow {
+    grid-template-columns: 1fr;
+    gap: 4px !important;
+  }
+}
+
+/* ─── Venue row: name / city / year ─── */
+.venueRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto;
+  align-items: baseline;
+}
+
+@media (max-width: 680px) {
+  .venueRow {
+    grid-template-columns: 1fr;
+    gap: 4px !important;
+  }
+}
+
+/* ─── Photo grid ─── */
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+@media (max-width: 500px) {
+  .photoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Contact grid ─── */
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ─── Hero bottom row: hook / meta ─── */
+.heroBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+/* ─── Hero meta: right-aligned on desktop, left on mobile ─── */
+.heroMeta {
+  text-align: right;
+}
+
+@media (max-width: 680px) {
+  .heroMeta {
+    text-align: left;
+  }
+}

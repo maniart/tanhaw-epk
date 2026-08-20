@@ -3,6 +3,7 @@
 import { useEnsemble } from '@/components/EnsembleContext'
 import SoundCloudPlayer from '@/components/SoundCloudPlayer'
 import type { ResolvedContent, Track } from '@/lib/types'
+import layout from '@/styles/layout.module.css'
 
 function TrackRow({
   index,
@@ -24,24 +25,11 @@ function TrackRow({
         borderTop: isFirst ? 'none' : '1px solid #1C1917',
       }}
     >
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'minmax(0,1fr) minmax(0,1.1fr)',
-          gap: 'clamp(20px,4vw,56px)',
-          alignItems: 'start',
-        }}
-      >
+      <div className={layout.trackRow} style={{ gap: 'clamp(20px,4vw,56px)' }}>
         {/* Left: number, title, description, credits */}
         <div style={{ minWidth: 0 }}>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'baseline', marginBottom: '18px' }}>
-            <span
-              style={{
-                fontFamily: "var(--font-mono), monospace",
-                fontSize: '11px',
-                color: '#5E564C',
-              }}
-            >
+            <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: '11px', color: '#5E564C' }}>
               {String(index + 1).padStart(2, '0')}
             </span>
             <h3
@@ -128,15 +116,12 @@ export default function MusicSection({ content }: { content: ResolvedContent }) 
   let displayedTracks: Array<{ id: string; track: Track }>
 
   if (variant.tracks) {
-    // Fixed ordered list (labels)
     displayedTracks = variant.tracks.map((id) => ({ id, track: tracks[id] }))
   } else {
-    // Derive from active ensemble (bookers)
     const active = ensemble?.active ?? variant.defaultEnsemble ?? ''
     const filtered = Object.entries(tracks)
       .filter(([, t]) => t.ensembles.includes(active))
       .map(([id, track]) => ({ id, track }))
-    // Fall back to full library if nothing matches
     displayedTracks =
       filtered.length > 0
         ? filtered
@@ -159,13 +144,7 @@ export default function MusicSection({ content }: { content: ResolvedContent }) 
         Music
       </h2>
       {displayedTracks.map(({ id, track }, i) => (
-        <TrackRow
-          key={id}
-          index={i}
-          id={id}
-          track={track}
-          isLast={i === displayedTracks.length - 1}
-        />
+        <TrackRow key={id} index={i} id={id} track={track} isLast={i === displayedTracks.length - 1} />
       ))}
     </section>
   )

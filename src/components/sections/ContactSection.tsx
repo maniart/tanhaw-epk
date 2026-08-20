@@ -1,4 +1,5 @@
 import type { ResolvedContent } from '@/lib/types'
+import layout from '@/styles/layout.module.css'
 
 export default function ContactSection({ content }: { content: ResolvedContent }) {
   const { shared } = content
@@ -6,12 +7,8 @@ export default function ContactSection({ content }: { content: ResolvedContent }
   return (
     <section style={{ padding: 'clamp(64px,12vh,140px) 0 0' }}>
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))',
-          gap: 'clamp(28px,5vw,56px)',
-          alignItems: 'start',
-        }}
+        className={layout.contactGrid}
+        style={{ gap: 'clamp(28px,5vw,56px)', alignItems: 'start' }}
       >
         <div>
           <span
@@ -47,9 +44,7 @@ export default function ContactSection({ content }: { content: ResolvedContent }
           </span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '20px', fontWeight: 300 }}>
             {shared.links.listen.map((link) => (
-              <a key={link.label} href={link.url}>
-                {link.label}
-              </a>
+              <a key={link.label} href={link.url}>{link.label}</a>
             ))}
           </div>
         </div>
@@ -69,9 +64,7 @@ export default function ContactSection({ content }: { content: ResolvedContent }
           </span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '20px', fontWeight: 300 }}>
             {shared.links.elsewhere.map((link) => (
-              <a key={link.label} href={link.url}>
-                {link.label}
-              </a>
+              <a key={link.label} href={link.url}>{link.label}</a>
             ))}
           </div>
         </div>

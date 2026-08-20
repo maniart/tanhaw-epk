@@ -1,4 +1,5 @@
 import type { ResolvedContent } from '@/lib/types'
+import layout from '@/styles/layout.module.css'
 
 export default function VenuesSection({ content }: { content: ResolvedContent }) {
   const { venues } = content
@@ -53,14 +54,8 @@ export default function VenuesSection({ content }: { content: ResolvedContent })
         {venues.map((venue, i) => (
           <div
             key={i}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'minmax(0,1fr) minmax(0,1.2fr) auto',
-              gap: '24px',
-              padding: '18px 0',
-              borderBottom: '1px solid #1C1917',
-              alignItems: 'baseline',
-            }}
+            className={layout.venueRow}
+            style={{ gap: '24px', padding: '18px 0', borderBottom: '1px solid #1C1917' }}
           >
             <span style={{ fontSize: '20px', fontWeight: 300 }}>{venue.name}</span>
             <span

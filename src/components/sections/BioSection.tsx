@@ -1,14 +1,14 @@
 import type { ResolvedContent } from '@/lib/types'
 import BioToggle from './BioToggle'
+import layout from '@/styles/layout.module.css'
 
 export default function BioSection({ content }: { content: ResolvedContent }) {
   const { shared, variant } = content
 
   return (
     <section
+      className={layout.labeled}
       style={{
-        display: 'grid',
-        gridTemplateColumns: 'minmax(0,220px) minmax(0,1fr)',
         gap: 'clamp(24px,5vw,64px)',
         padding: 'clamp(64px,12vh,140px) 0',
         borderBottom: '1px solid #221E1A',

@@ -1,13 +1,13 @@
 import type { ResolvedContent } from '@/lib/types'
+import layout from '@/styles/layout.module.css'
 
 export default function CollaboratorsSection({ content }: { content: ResolvedContent }) {
   const { shared } = content
 
   return (
     <section
+      className={layout.labeled}
       style={{
-        display: 'grid',
-        gridTemplateColumns: 'minmax(0,220px) minmax(0,1fr)',
         gap: 'clamp(24px,5vw,64px)',
         padding: 'clamp(64px,12vh,140px) 0',
         borderBottom: '1px solid #221E1A',
@@ -31,13 +31,11 @@ export default function CollaboratorsSection({ content }: { content: ResolvedCon
         {shared.collaborators.map((c, i) => (
           <div
             key={i}
+            className={layout.collaboratorRow}
             style={{
-              display: 'grid',
-              gridTemplateColumns: 'minmax(0,1fr) minmax(0,1.2fr)',
               gap: '24px',
               padding: '18px 0',
               borderBottom: '1px solid #1C1917',
-              alignItems: 'baseline',
             }}
           >
             <span style={{ fontSize: '22px', fontWeight: 300 }}>{c.name}</span>

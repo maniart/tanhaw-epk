@@ -2,6 +2,7 @@
 
 import { useEnsemble } from '@/components/EnsembleContext'
 import type { ResolvedContent } from '@/lib/types'
+import layout from '@/styles/layout.module.css'
 
 export default function RiderSection({ content }: { content: ResolvedContent }) {
   const ensemble = useEnsemble()
@@ -16,9 +17,8 @@ export default function RiderSection({ content }: { content: ResolvedContent }) 
 
   return (
     <section
+      className={layout.labeled}
       style={{
-        display: 'grid',
-        gridTemplateColumns: 'minmax(0,220px) minmax(0,1fr)',
         gap: 'clamp(24px,5vw,64px)',
         padding: 'clamp(64px,12vh,140px) 0',
         borderBottom: '1px solid #221E1A',
@@ -63,15 +63,7 @@ export default function RiderSection({ content }: { content: ResolvedContent }) 
             }}
           >
             {summary.map((line, i) => (
-              <li
-                key={i}
-                style={{
-                  fontSize: '18px',
-                  lineHeight: 1.5,
-                  color: '#B5AC9E',
-                  fontWeight: 300,
-                }}
-              >
+              <li key={i} style={{ fontSize: '18px', lineHeight: 1.5, color: '#B5AC9E', fontWeight: 300 }}>
                 {line}
               </li>
             ))}

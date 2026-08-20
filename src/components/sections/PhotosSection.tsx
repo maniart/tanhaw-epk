@@ -1,5 +1,6 @@
 import type { ResolvedContent, Photo } from '@/lib/types'
 import styles from '@/styles/photos.module.css'
+import layout from '@/styles/layout.module.css'
 
 const DOWNLOAD_ICON = (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="square" aria-hidden="true">
@@ -93,13 +94,7 @@ export default function PhotosSection({ content }: { content: ResolvedContent })
           High-res on request
         </span>
       </div>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit,minmax(230px,1fr))',
-          gap: 'clamp(12px,2vw,24px)',
-        }}
-      >
+      <div className={layout.photoGrid} style={{ gap: 'clamp(12px,2vw,24px)' }}>
         {gridPhotos.map((photo) => (
           <PhotoCard key={photo.id} photo={photo} />
         ))}
