@@ -1,0 +1,14 @@
+{
+  "slug": "labels",
+  "route": "/",
+  "title": "Tan Haw \u2014 EPK",
+  "description": "Electronic Press Kit \u2014 2026",
+  "heroPhoto": "hero-setar-beach",
+  "bio": "both",
+  "sections": ["hero", "featuredTrack", "bio", "music", "press", "photos", "collaborators", "contact"],
+  "featuredTrack": "roya-ye-mahtab",
+  "featuredTrackLabel": "Lead track \u2014 Debut LP",
+  "tracks": ["roya-ye-mahtab", "sho-hud", "all-you-could-have-been"],
+  "defaultEnsemble": null,
+  "videos": []
+}

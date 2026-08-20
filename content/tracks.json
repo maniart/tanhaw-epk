@@ -1,0 +1,26 @@
+{
+  "roya-ye-mahtab": {
+    "title": "Roy\u00e2-ye Maht\u00e2b",
+    "description": "Title track.",
+    "credits": "Maziar Sharifian \u2014 Kam\u00e2nche, Set\u00e2r",
+    "soundcloudTrackId": "2354673524",
+    "secretToken": "s-a9mJtRQyuAu",
+    "ensembles": ["trio", "band"]
+  },
+  "sho-hud": {
+    "title": "Sho-Hud",
+    "description": "Iranian-traditional-inspired psychedelic instrumental rock, microtonal fretless guitar riffs.",
+    "credits": "Yahya Alkhansa \u2014 percussion \u00b7 Kate Pass \u2014 electric bass",
+    "soundcloudTrackId": "2384737716",
+    "secretToken": "s-HJzPEozsABp",
+    "ensembles": ["band"]
+  },
+  "all-you-could-have-been": {
+    "title": "All You Could Have Been",
+    "description": "The album\u2019s only English-language track \u2014 rock, Set\u00e2r, double bass, drums, vocals.",
+    "credits": "Yahya Alkhansa \u2014 drums \u00b7 Kate Pass \u2014 double bass \u00b7 Mani \u2014 Set\u00e2r, vocals",
+    "soundcloudTrackId": null,
+    "secretToken": null,
+    "ensembles": ["band"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "bookers",
+  "route": "/booking",
+  "title": "Tan Haw \u2014 Booking",
+  "description": "Booking information \u2014 2026",
+  "heroPhoto": "hero-setar-beach",
+  "bio": "short",
+  "sections": ["hero", "ensembles", "bio", "music", "video", "venues", "rider", "press", "photos", "collaborators", "contact"],
+  "featuredTrack": null,
+  "featuredTrackLabel": null,
+  "tracks": null,
+  "defaultEnsemble": "trio",
+  "videos": []
+}

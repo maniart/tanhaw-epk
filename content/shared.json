@@ -1,0 +1,99 @@
+{
+  "artist": "Tan Haw",
+  "legalName": "Mani Nilchiani",
+  "hook": "Iranian classical roots, psychedelic and electronic futures.",
+  "tagline": "Mystic troubadour from Iran by way of Turtle Island",
+  "meta": [
+    "Brooklyn \u27f7 Mexico",
+    "Set\u00e2r \u00b7 Vocals \u00b7 Fretless guitar",
+    "Persian \u00b7 Azerbaijani \u00b7 English \u00b7 Spanish"
+  ],
+  "bioShort": "Tan Haw is the stage name of Mani Nilchiani, an Iranian musician who splits his time between Brooklyn and Mexico, trained in Set\u00e2r and the Radif tradition, moving between Persian classical roots, psych-rock, and electronica across Persian, Azerbaijani, English, and Spanish.",
+  "bioLong": [
+    "Tan Haw is the stage name of Mani Nilchiani, an Iranian musician splitting his time between Brooklyn and Mexico, trained in Set\u00e2r and the Radif tradition under master musician Fared Shafinury since 2018, with vocal technique under Maziar Sharifian.",
+    "His debut LP, Roy\u00e2-ye Maht\u00e2b (So\u00f1ar con la luna), opens with \u201cAyriliq\u201d \u2014 a departure point rooted in his grandfather\u2019s Baku \u2014 and traces an intergenerational migration arc from Azerbaijan to Tehran to New York to Mexico, where months spent each year have shaped the record\u2019s sound and spirit.",
+    "The record moves through Iranian classical structure, microtonal fretless-guitar psych-rock, electronica, and cumbia, sung across Persian, Azerbaijani, English, and Spanish. Tan Haw\u2019s work has been featured in Bandcamp Daily\u2019s \u201cBig Ups.\u201d"
+  ],
+  "footerSignoff": "Mystic troubadour from Iran by way of Turtle Island \u2022\u262d\u25ef\u262e\u2022",
+  "contact": {
+    "email": "mani.nilchiani@gmail.com"
+  },
+  "links": {
+    "listen": [
+      { "label": "Bandcamp", "url": "https://tanhaw.bandcamp.com/" },
+      { "label": "SoundCloud", "url": "https://soundcloud.com/tanhaw" },
+      { "label": "YouTube", "url": "https://www.youtube.com/@tanhawmusic" }
+    ],
+    "elsewhere": [
+      { "label": "linktr.ee/tanhaw", "url": "https://linktr.ee/tanhaw" },
+      { "label": "Substack", "url": "https://tanhaw.substack.com/" },
+      { "label": "Instagram", "url": "https://linktr.ee/tanhaw" }
+    ]
+  },
+  "press": {
+    "quote": "Tan Haw is a radical improviser who explores the intersection of Iranian classical music with various forms of contemporary music.",
+    "photo": "press-setar-sky",
+    "features": [
+      {
+        "outlet": "Bandcamp Daily \u2014 Big Ups",
+        "title": "Cyrus Moussavi of Mississippi Records spotlights Iranian music he loves",
+        "url": "https://daily.bandcamp.com/big-ups/cyrus-moussavi-mississippi-records-iran-music"
+      }
+    ]
+  },
+  "collaborators": [
+    { "name": "Maziar Sharifian", "role": "Musical direction, vocal training, Kam\u00e2nche, Set\u00e2r" },
+    { "name": "Fared Shafinury", "role": "Set\u00e2r and Radif training" },
+    { "name": "Yahya Alkhansa", "role": "Percussion, drums" },
+    { "name": "Kate Pass", "role": "Electric bass, double bass" },
+    { "name": "Pedro Ojeda", "role": "Drums" }
+  ],
+  "photos": [
+    {
+      "id": "hero-setar-beach",
+      "src": "/photos/web-hero-setar-beach.jpg",
+      "credit": null,
+      "caption": "Press 2024",
+      "alt": "Tan Haw with set\u00e2r on the beach",
+      "focal": "50% 26%",
+      "downloadName": "Tan Haw - Press 2024 (beach setar).jpg"
+    },
+    {
+      "id": "press-setar-sky",
+      "src": "/photos/web-press-setar-sky.jpg",
+      "credit": "Julie Thompson",
+      "caption": "Press 2024",
+      "alt": "Tan Haw playing set\u00e2r beneath an open sky",
+      "focal": "50% 26%",
+      "downloadName": "Tan Haw - Press 2024 (sky setar) - ph Julie Thompson.jpg"
+    },
+    {
+      "id": "press-portrait-beach",
+      "src": "/photos/web-press-beach.jpg",
+      "credit": "Julie Thompson",
+      "caption": "Press portrait 2024",
+      "alt": "Tan Haw press portrait",
+      "focal": "50% 30%",
+      "downloadName": "Tan Haw - Press Portrait 2024 - ph Julie Thompson.jpg"
+    },
+    {
+      "id": "live-umbra",
+      "src": "/photos/web-live-umbra.jpg",
+      "credit": "Sasan Oskouei",
+      "caption": "Umbra, New York 2025",
+      "alt": "Tan Haw live at Umbra, New York, 2025",
+      "focal": "50% 30%",
+      "downloadName": "Tan Haw - Umbra New York 2025 - ph Sasan Oskouei.jpg"
+    },
+    {
+      "id": "live-artspace",
+      "src": "/photos/web-live-artspace.jpg",
+      "credit": "Matt Cusimano",
+      "caption": "El Barrio\u2019s Artspace 2026",
+      "alt": "Tan Haw live at El Barrio\u2019s Artspace, 2026",
+      "focal": "50% 50%",
+      "downloadName": "Tan Haw - El Barrios Artspace 2026 - ph Matt Cusimano.jpg"
+    }
+  ],
+  "photoGrid": ["press-portrait-beach", "live-umbra", "live-artspace"]
+}

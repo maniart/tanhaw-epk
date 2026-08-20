@@ -1,0 +1,73 @@
+{
+  "solo": {
+    "label": "Solo",
+    "pitch": "Set\u00e2r and voice \u2014 intimate, minimal, meditative. Mani performs alone with his set\u00e2r, weaving Persian classical modal improvisation with original compositions.",
+    "rider": {
+      "summary": [
+        "Stage: minimum 8\u2019 \u00d7 8\u2019",
+        "PA: stereo mains, no backline required",
+        "Inputs: 1 \u00d7 contact mic (set\u00e2r), 1 \u00d7 vocal mic",
+        "Monitor: 1 \u00d7 floor wedge",
+        "Load-in: 30 min"
+      ],
+      "spec": [
+        { "item": "Stage size", "detail": "8\u2019 \u00d7 8\u2019 minimum" },
+        { "item": "PA", "detail": "Stereo mains with adequate coverage for venue" },
+        { "item": "Inputs", "detail": "2 channels: contact mic (XLR), vocal mic (XLR, SM58 or equivalent)" },
+        { "item": "Monitor", "detail": "1 \u00d7 floor wedge" },
+        { "item": "DI box", "detail": "1 \u00d7 active DI (if contact mic is unbalanced)" },
+        { "item": "Backline", "detail": "None required" },
+        { "item": "Load-in", "detail": "30 minutes" },
+        { "item": "Soundcheck", "detail": "30 minutes" }
+      ]
+    }
+  },
+  "trio": {
+    "label": "Trio",
+    "pitch": "Set\u00e2r, kamanche, and percussion \u2014 the core acoustic trio, drawing on the Radif tradition and original compositions that move between Iranian classical, folk, and contemporary improvisation.",
+    "rider": {
+      "summary": [
+        "Stage: minimum 12\u2019 \u00d7 10\u2019",
+        "PA: stereo mains + subwoofer",
+        "Inputs: 4 \u00d7 instrument channels, 1 \u00d7 vocal",
+        "Monitors: 2 \u00d7 floor wedges",
+        "Load-in: 45 min"
+      ],
+      "spec": [
+        { "item": "Stage size", "detail": "12\u2019 \u00d7 10\u2019 minimum" },
+        { "item": "PA", "detail": "Stereo mains with subwoofer" },
+        { "item": "Inputs", "detail": "5 channels: set\u00e2r contact mic, kamanche contact mic, 2 \u00d7 hand-drum mics, vocal mic" },
+        { "item": "Monitors", "detail": "2 \u00d7 floor wedges (one per side)" },
+        { "item": "DI boxes", "detail": "2 \u00d7 active DI" },
+        { "item": "Backline", "detail": "None required" },
+        { "item": "Load-in", "detail": "45 minutes" },
+        { "item": "Soundcheck", "detail": "45 minutes" }
+      ]
+    }
+  },
+  "band": {
+    "label": "Full band",
+    "pitch": "Set\u00e2r, fretless guitar, bass, and drums \u2014 the full electric band, performing material from the debut LP Roy\u00e2-ye Maht\u00e2b. Ranges from delicate acoustic passages to psych-rock and electronica.",
+    "rider": {
+      "summary": [
+        "Stage: minimum 20\u2019 \u00d7 16\u2019",
+        "PA: stereo mains + subwoofer, front-fill recommended",
+        "Inputs: 14 channels (see full spec)",
+        "Monitors: 4 \u00d7 floor wedges or IEM system",
+        "Backline: drum kit, bass amp",
+        "Load-in: 90 min"
+      ],
+      "spec": [
+        { "item": "Stage size", "detail": "20\u2019 \u00d7 16\u2019 minimum" },
+        { "item": "PA", "detail": "Stereo mains with subwoofer; front-fill strongly recommended" },
+        { "item": "Inputs", "detail": "14 channels: set\u00e2r (contact + DI), fretless guitar (DI), bass (DI), kick, snare top/bottom, hi-hat, 3 \u00d7 toms, overheads L/R, vocal mic" },
+        { "item": "Monitors", "detail": "4 \u00d7 floor wedges or IEM system with 4 mixes" },
+        { "item": "DI boxes", "detail": "3 \u00d7 active DI" },
+        { "item": "Backline \u2014 drums", "detail": "5-piece kit: 22\u201d kick, 12\u201d/14\u201d rack toms, 16\u201d floor tom, snare, hi-hat stand, 2 \u00d7 crash, 1 \u00d7 ride" },
+        { "item": "Backline \u2014 bass", "detail": "Bass amp head + 4\u00d710 or 8\u00d710 cab (Ampeg or equivalent)" },
+        { "item": "Load-in", "detail": "90 minutes" },
+        { "item": "Soundcheck", "detail": "60 minutes" }
+      ]
+    }
+  }
+}

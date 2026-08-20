@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #100E0C;
+}
+
+body {
+  font-family: var(--font-newsreader), Georgia, serif;
+  color: #E4DED2;
+  overflow-x: hidden;
+}
+
+a {
+  color: #E4DED2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C4553A;
+}
+
+::selection {
+  background: #C4553A;
+  color: #100E0C;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Print styles for rider pages */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  a {
+    color: #000;
+  }
+}
