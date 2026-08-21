@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { loadContent } from '@/lib/content'
 import EPKPage from '@/components/EPKPage'
 
-const content = loadContent('labels')
+const content = loadContent('bookers')
 
 export const metadata: Metadata = {
   title: content.variant.title,
