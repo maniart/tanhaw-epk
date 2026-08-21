@@ -26,7 +26,7 @@ export default function FeaturedTrackSection({ content }: { content: ResolvedCon
             fontSize: '11px',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#C4553A',
+            color: 'rgb(157, 34, 34)',
           }}
         >
           {variant.featuredTrackLabel}

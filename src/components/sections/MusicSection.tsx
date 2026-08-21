@@ -75,8 +75,8 @@ function TrackRow({
 
         {/* Right: player or placeholder */}
         <div style={{ minWidth: 0 }}>
-          {track.soundcloudTrackId && track.secretToken ? (
-            <SoundCloudPlayer trackId={track.soundcloudTrackId} secretToken={track.secretToken} />
+          {track.soundcloudTrackId ? (
+            <SoundCloudPlayer trackId={track.soundcloudTrackId} secretToken={track.secretToken ?? null} />
           ) : (
             <div
               style={{

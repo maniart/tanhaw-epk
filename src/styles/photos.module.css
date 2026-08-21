@@ -26,8 +26,8 @@
 }
 
 .downloadBtn:hover {
-  background: #C4553A !important;
-  border-color: #C4553A !important;
+  background: rgb(157, 34, 34) !important;
+  border-color: rgb(157, 34, 34) !important;
   color: #100E0C !important;
 }
 

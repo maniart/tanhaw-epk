@@ -94,7 +94,7 @@ export default function PressSection({ content }: { content: ResolvedContent }) 
                 fontSize: '11px',
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
-                color: '#E07A5E',
+                color: 'rgb(157, 34, 34)',
                 display: 'block',
                 marginBottom: '10px',
                 textShadow: '0 1px 12px rgba(16,14,12,0.9)',

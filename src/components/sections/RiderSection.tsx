@@ -45,7 +45,7 @@ export default function RiderSection({ content }: { content: ResolvedContent }) 
             fontSize: '11px',
             letterSpacing: '0.14em',
             textTransform: 'uppercase',
-            color: '#C4553A',
+            color: 'rgb(157, 34, 34)',
             margin: '0 0 20px',
           }}
         >
@@ -93,11 +93,11 @@ export default function RiderSection({ content }: { content: ResolvedContent }) 
             fontSize: '11px',
             letterSpacing: '0.16em',
             textTransform: 'uppercase',
-            color: '#C4553A',
+            color: 'rgb(157, 34, 34)',
             borderBottom: '1px solid #3A322B',
             paddingBottom: '6px',
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.borderBottomColor = '#C4553A')}
+          onMouseEnter={(e) => (e.currentTarget.style.borderBottomColor = 'rgb(157, 34, 34)')}
           onMouseLeave={(e) => (e.currentTarget.style.borderBottomColor = '#3A322B')}
         >
           Full rider PDF

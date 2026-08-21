@@ -37,14 +37,14 @@ export default function BioToggle({ bioLong }: Props) {
           fontSize: '11px',
           letterSpacing: '0.16em',
           textTransform: 'uppercase',
-          color: '#C4553A',
+          color: 'rgb(157, 34, 34)',
           background: 'none',
           border: 'none',
           borderBottom: '1px solid #3A322B',
           padding: '0 0 6px',
           cursor: 'pointer',
         }}
-        onMouseEnter={(e) => (e.currentTarget.style.borderBottomColor = '#C4553A')}
+        onMouseEnter={(e) => (e.currentTarget.style.borderBottomColor = 'rgb(157, 34, 34)')}
         onMouseLeave={(e) => (e.currentTarget.style.borderBottomColor = '#3A322B')}
       >
         {open ? 'Close full bio' : 'Read full bio'}

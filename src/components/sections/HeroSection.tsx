@@ -75,7 +75,7 @@ export default function HeroSection({ content }: { content: ResolvedContent }) {
           <img
             src="/logo.svg"
             alt="Tan Haw logotype"
-            style={{ height: '32px', width: 'auto', display: 'block' }}
+            style={{ height: '44px', width: 'auto', display: 'block' }}
           />
         </span>
         <span>Electronic Press Kit — 2026</span>

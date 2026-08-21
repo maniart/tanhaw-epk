@@ -20,11 +20,11 @@ a {
 }
 
 a:hover {
-  color: #C4553A;
+  color: rgb(157, 34, 34);
 }
 
 ::selection {
-  background: #C4553A;
+  background: rgb(157, 34, 34);
   color: #100E0C;
 }
 

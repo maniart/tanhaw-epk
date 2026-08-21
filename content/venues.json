@@ -1,1 +1,13 @@
-[]
+[
+    { "name": "Baby's Alright", "city": "Brooklyn, NY", "year": 2019 },
+    { "name": "MoMA PS1", "city": "Queens, NY", "year": 2020 },
+    { "name": "Public Records", "city": "Brooklyn, NY", "year": 2022 },
+    { "name": "Aire Libre FM", "city": "CDMX, MX", "year": 2022 },
+    { "name": "Symphony Space", "city": "NY, NY", "year": 2022 },
+    { "name": "ATEA", "city": "CDMX, MX", "year": 2023 },
+    { "name": "Barbès", "city": "Brooklyn, NY", "year": 2024 },
+    { "name": "Brooklyn Art Haus", "city": "City, Country", "year": 2026 },
+    { "name": "El Barrio's Artspace", "city": "NY, NY", "year": 2026 },
+    { "name": "The People's Forum", "city": "NY, NY", "year": 2026 },
+    { "name": "Cinco Pies", "city": "CDMX, MX", "year": 2026 }
+]

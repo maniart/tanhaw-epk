@@ -1,10 +1,10 @@
 interface Props {
   trackId: string
-  secretToken: string
+  secretToken: string | null
 }
 
 export default function SoundCloudPlayer({ trackId, secretToken }: Props) {
-  const trackUrl = `https://api.soundcloud.com/tracks/soundcloud:tracks:${trackId}?secret_token=${secretToken}`
+  const trackUrl = `https://api.soundcloud.com/tracks/soundcloud:tracks:${trackId}${secretToken ? `?secret_token=${secretToken}` : ''}`
   const src =
     `https://w.soundcloud.com/player/?url=${encodeURIComponent(trackUrl)}` +
     `&color=%2381212e&auto_play=false&hide_related=true&show_comments=false` +

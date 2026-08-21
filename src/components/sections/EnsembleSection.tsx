@@ -49,9 +49,9 @@ export default function EnsembleSection({ content }: { content: ResolvedContent 
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
                 padding: '10px 20px',
-                background: isActive ? '#C4553A' : 'transparent',
+                background: isActive ? 'rgb(157, 34, 34)' : 'transparent',
                 color: isActive ? '#100E0C' : '#7C7266',
-                border: `1px solid ${isActive ? '#C4553A' : '#3A322B'}`,
+                border: `1px solid ${isActive ? 'rgb(157, 34, 34)' : '#3A322B'}`,
                 cursor: 'pointer',
                 transition: 'background 0.18s ease, color 0.18s ease, border-color 0.18s ease',
               }}

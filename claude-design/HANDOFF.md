@@ -180,8 +180,8 @@ Port exactly from `Tan Haw EPK.dc.html`. Do not re-derive.
 | Faint | `#5E564C` | captions, credits |
 | Footer | `#A79E92` | footer sign-off — deliberately brighter than Faint |
 | Rule | `#221E1A` / `#1C1917` | section dividers / inner rules |
-| Ember | `#C4553A` | accent, hover, active |
-| Ember light | `#E07A5E` | accent over photography |
+| Ember | `rgb(157, 34, 34)` | accent, hover, active |
+| Ember light | `rgb(157, 34, 34)` | accent over photography |
 
 Two background values only — the ground and photography. No gradient fills as decoration; gradients are photo scrims only.
 

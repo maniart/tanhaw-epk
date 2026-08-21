@@ -5,10 +5,10 @@
   "description": "Booking information \u2014 2026",
   "heroPhoto": "hero-setar-beach",
   "bio": "short",
-  "sections": ["hero", "ensembles", "bio", "music", "video", "venues", "rider", "press", "photos", "collaborators", "contact"],
+  "sections": ["hero", "ensembles", "bio", "music", "venues", "rider", "press", "photos", "collaborators", "contact"],
   "featuredTrack": null,
   "featuredTrackLabel": null,
-  "tracks": null,
+  "tracks": ["12", "sho-hud", "Shiraz Pamir", "For Unidentified Body 11780", "daybreak"],
   "defaultEnsemble": "trio",
   "videos": []
 }

@@ -5,7 +5,10 @@
     "credits": "Maziar Sharifian \u2014 Kam\u00e2nche, Set\u00e2r",
     "soundcloudTrackId": "2354673524",
     "secretToken": "s-a9mJtRQyuAu",
-    "ensembles": ["trio", "band"]
+    "ensembles": [
+      "trio",
+      "band"
+    ]
   },
   "sho-hud": {
     "title": "Sho-Hud",
@@ -13,7 +16,9 @@
     "credits": "Yahya Alkhansa \u2014 percussion \u00b7 Kate Pass \u2014 electric bass",
     "soundcloudTrackId": "2384737716",
     "secretToken": "s-HJzPEozsABp",
-    "ensembles": ["band"]
+    "ensembles": [
+      "band"
+    ]
   },
   "all-you-could-have-been": {
     "title": "All You Could Have Been",
@@ -21,6 +26,52 @@
     "credits": "Yahya Alkhansa \u2014 drums \u00b7 Kate Pass \u2014 double bass \u00b7 Mani \u2014 Set\u00e2r, vocals",
     "soundcloudTrackId": null,
     "secretToken": null,
-    "ensembles": ["band"]
+    "ensembles": [
+      "band"
+    ]
+  },
+  "12": {
+    "title": "12",
+    "description": "12 recounts the mourning of my heart during Israel's 12-day invasion of my homeland in June 2025 as I visited my friends and family back home. The song begins with bewilderment and gradually transitions into solace and resolve. On the eve of the 11th day, I opened the Divan of Hafez, pleading to the mystic poet to guide me. He spoke to me resolutely from the Great Beyond. ",
+    "credits": "Mani Nilchiani \u2014 Set\u00e2r, vocals",
+    "soundcloudTrackId": "2197559799",
+    "secretToken": null,
+    "ensembles": [
+      "trio",
+      "band"
+    ]
+  },
+  "Shiraz Pamir": {
+    "title": "Shiraz Pamir",
+    "description": "“Shiraz – Pamir” is a contemporary adaptation of a beautiful traditional Central Asian devotional tune by The Badakhshân Ensemble, with sublime poetry from 14th century mystic Persian poet, Hâfez of Shiraz.",
+    "credits": "Mani Nilchiani \u2014 Set\u00e2r, vocals",
+    "soundcloudTrackId": "1239038425",
+    "secretToken": null,
+    "ensembles": [
+      "trio",
+      "band"
+    ]
+  },
+  "daybreak": {
+    "title": "Daybreak",
+    "description": "An homage to the historically intertwined world of Iranian classical music and poetry, Daybreak's sound borrows heavily from Iranian folk melodies and lyrical sensibilities while developing a contemporary psychedelic sound.",
+    "credits": "",
+    "soundcloudTrackId": "948313702",
+    "secretToken": null,
+    "ensembles": [
+      "trio",
+      "band"
+    ]
+  },
+  "For Unidentified Body 11780": {
+    "title": "For Unidentified Body 11780",
+    "description": "An improvised space of mourning, dedicated to an unnamed slain protester during the massacre of Iranian protesters, January 2026.",
+    "credits": "Mani Nilchiani \u2014 Set\u00e2r, vocals",
+    "soundcloudTrackId": "2275995449",
+    "secretToken": null,
+    "ensembles": [
+      "trio",
+      "band"
+    ]
   }
 }
