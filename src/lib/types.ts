@@ -92,6 +92,40 @@ export interface Variant {
   videos: string[]
 }
 
+export interface LinktreeLink {
+  id: string
+  label: string
+  sublabel: string | null
+  url: string
+}
+
+export interface LinktreeSection {
+  id: string
+  label: string
+  links: LinktreeLink[]
+}
+
+export interface LinktreeSocial {
+  id: string
+  label: string
+  url: string
+}
+
+export interface LinktreeData {
+  profile: {
+    name: string
+    bio: string
+    heroPhoto: string
+  }
+  sections: LinktreeSection[]
+  socials: LinktreeSocial[]
+}
+
+export interface VenuePage {
+  displayName: string
+  tracks: string[] | null
+}
+
 export interface ResolvedContent {
   variant: Variant
   shared: SharedContent

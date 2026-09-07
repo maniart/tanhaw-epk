@@ -1,19 +1,21 @@
 import type { Metadata } from 'next'
-import { loadContent } from '@/lib/content'
-import EPKPage from '@/components/EPKPage'
+import { getPhoto } from '@/lib/content'
+import LinktreePage from '@/components/LinktreePage'
+import type { LinktreeData } from '@/lib/types'
+import linktreeData from '../../content/linktree.json'
 
-const content = loadContent('bookers')
+const heroPhoto = getPhoto((linktreeData as LinktreeData).profile.heroPhoto)
 
 export const metadata: Metadata = {
-  title: content.variant.title,
-  description: content.variant.description,
+  title: 'Tan Haw',
+  description: 'Mystic troubadour from Iran through Turtle Island •☽◯☾•',
   openGraph: {
-    title: content.variant.title,
-    description: content.variant.description,
-    images: [{ url: content.heroPhoto.src }],
+    title: 'Tan Haw',
+    description: 'Mystic troubadour from Iran through Turtle Island •☽◯☾•',
+    images: [{ url: heroPhoto.src }],
   },
 }
 
-export default function LabelsPage() {
-  return <EPKPage content={content} />
+export default function HomePage() {
+  return <LinktreePage data={linktreeData as LinktreeData} heroPhoto={heroPhoto} />
 }

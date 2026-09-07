@@ -1,13 +1,14 @@
 import fs from 'fs'
 import path from 'path'
-import type { ResolvedContent, Photo, Track, Variant } from './types'
+import type { ResolvedContent, Photo, Track, Variant, VenuePage } from './types'
 
 import sharedData from '../../content/shared.json'
 import tracksData from '../../content/tracks.json'
 import ensemblesData from '../../content/ensembles.json'
 import venuesData from '../../content/venues.json'
-import labelsVariant from '../../content/variants/labels.json'
+import aAndRVariant from '../../content/variants/a-and-r.json'
 import bookersVariant from '../../content/variants/bookers.json'
+import venuePagesData from '../../content/venue-pages.json'
 
 const VALID_SECTIONS = new Set([
   'hero', 'featuredTrack', 'bio', 'music',
@@ -16,7 +17,7 @@ const VALID_SECTIONS = new Set([
 ])
 
 const VARIANT_MAP: Record<string, Variant> = {
-  labels: labelsVariant as Variant,
+  'a-and-r': aAndRVariant as Variant,
   bookers: bookersVariant as Variant,
 }
 
@@ -100,13 +101,44 @@ function validate(variant: Variant): void {
   }
 }
 
-export function loadContent(slug: string): ResolvedContent {
+export function getPhoto(id: string): Photo {
+  const photos = sharedData.photos as Photo[]
+  const photo = photos.find((p) => p.id === id)
+  if (!photo) throw new Error(`Photo "${id}" not found in shared.json`)
+  return photo
+}
+
+export function getVenueSlugs(): string[] {
+  return Object.keys(venuePagesData)
+}
+
+export function loadContent(slug: string, venueSlug?: string): ResolvedContent {
   const variant = VARIANT_MAP[slug]
   if (!variant) {
     throw new Error(`Unknown variant slug "${slug}". Available: ${Object.keys(VARIANT_MAP).join(', ')}`)
   }
 
   validate(variant)
+
+  const venuePages = venuePagesData as Record<string, VenuePage>
+  let venuePage: VenuePage | undefined
+  if (venueSlug !== undefined) {
+    venuePage = venuePages[venueSlug]
+    if (!venuePage) {
+      throw new Error(`Unknown venue slug "${venueSlug}". Available: ${Object.keys(venuePages).join(', ')}`)
+    }
+    if (venuePage.tracks) {
+      const errors: string[] = []
+      for (const id of venuePage.tracks) {
+        if (!(id in tracksData)) {
+          errors.push(`Track "${id}" in venue-pages["${venueSlug}"] not found in tracks.json`)
+        }
+      }
+      if (errors.length > 0) {
+        throw new Error(`Content validation failed for venue "${venueSlug}":\n${errors.map((e) => `  \u2022 ${e}`).join('\n')}`)
+      }
+    }
+  }
 
   const shared = sharedData as typeof sharedData & { photos: Photo[] }
   const tracks = tracksData as Record<string, Track>
@@ -122,9 +154,11 @@ export function loadContent(slug: string): ResolvedContent {
   const pressPhoto = photoMap[shared.press.photo]
   const gridPhotos = shared.photoGrid.map((id) => photoMap[id])
 
-  // Build ordered track list for this variant
+  // Build ordered track list — venue override takes priority over variant default
   let trackIds: string[]
-  if (variant.tracks) {
+  if (venuePage?.tracks) {
+    trackIds = venuePage.tracks
+  } else if (variant.tracks) {
     trackIds = variant.tracks
   } else {
     // Will be filtered client-side by active ensemble; provide full library

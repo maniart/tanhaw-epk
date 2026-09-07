@@ -1,0 +1,124 @@
+{
+  "profile": {
+    "name": "Tan Haw",
+    "bio": "Mystic troubadour from Iran through Turtle Island •☽◯☾•",
+    "heroPhoto": "hero-setar-beach"
+  },
+  "sections": [
+    {
+      "id": "live",
+      "label": "Live",
+      "links": [
+        {
+          "id": "bunna-cafe-sept-2025",
+          "label": "September 19 — Bunna Cafe",
+          "sublabel": "Brooklyn, NY",
+          "url": "https://www.bunnaethiopia.net/event-details/tan-haw"
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "label": "Music",
+      "links": [
+        {
+          "id": "for-unidentified-body-spotify",
+          "label": "For Unidentified Body 11780",
+          "sublabel": "Single — Spotify",
+          "url": "https://open.spotify.com/track/5vVPx8BIBbZz7n0h8RLZEr"
+        },
+        {
+          "id": "12-album-spotify",
+          "label": "12",
+          "sublabel": "Album — Spotify",
+          "url": "https://open.spotify.com/album/5R2W0XrtZDUpx10BYgBrpe"
+        },
+        {
+          "id": "las-bugambilias-spotify",
+          "label": "Las Bugambilias Vol. 1",
+          "sublabel": "Album — Spotify",
+          "url": "https://open.spotify.com/album/7JncPAm8xXRA7bOnBYG4wg"
+        },
+        {
+          "id": "bandcamp",
+          "label": "Bandcamp",
+          "sublabel": "Full discography",
+          "url": "https://tanhaw.bandcamp.com/"
+        },
+        {
+          "id": "spotify-artist",
+          "label": "Spotify",
+          "sublabel": "Artist profile",
+          "url": "https://open.spotify.com/artist/4u87G2qGOQ7vg0Zj1PA7cz"
+        },
+        {
+          "id": "soundcloud",
+          "label": "SoundCloud",
+          "sublabel": "Free listening",
+          "url": "https://soundcloud.com/tanhaw"
+        }
+      ]
+    },
+    {
+      "id": "press",
+      "label": "Press & Writing",
+      "links": [
+        {
+          "id": "bandcamp-daily-big-ups",
+          "label": "Big Ups — Bandcamp Daily",
+          "sublabel": "Cyrus Moussavi of Mississippi Records",
+          "url": "https://daily.bandcamp.com/big-ups/cyrus-moussavi-mississippi-records-iran-music"
+        },
+        {
+          "id": "mississippi-records-interview",
+          "label": "Interview with Mississippi Records",
+          "sublabel": null,
+          "url": "https://www.mississippirecords.net/campaigns/view-campaign/wBrg7td2fOwKQi6iizyxoDDRecMgS3BLUgZ7vnt_HaeoWddzLEJDjZaXyiD8LGhn4Wfpu6tpfyF2iHJW4TyDRST8T5dWREru"
+        },
+        {
+          "id": "substack",
+          "label": "Substack Newsletter",
+          "sublabel": null,
+          "url": "https://tanhaw.substack.com/profile/posts"
+        }
+      ]
+    },
+    {
+      "id": "collaborations",
+      "label": "Collaborations",
+      "links": [
+        {
+          "id": "remix-culture-ep",
+          "label": "EP with Remix ⟷ Culture",
+          "sublabel": "Sparrow Bush, USA — Oct 2022",
+          "url": "https://remixculture.bandcamp.com/album/sparrow-bush-usa-oct-2022"
+        },
+        {
+          "id": "remix-culture-sample-pack",
+          "label": "Sample Pack with Remix ⟷ Culture",
+          "sublabel": null,
+          "url": "https://www.remix-culture.org/mani"
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "label": "Video",
+      "links": [
+        {
+          "id": "youtube",
+          "label": "YouTube",
+          "sublabel": "@tanhawmusic",
+          "url": "https://www.youtube.com/@tanhawmusic"
+        }
+      ]
+    }
+  ],
+  "socials": [
+    { "id": "instagram", "label": "Instagram", "url": "https://instagram.com/tan___haw" },
+    { "id": "spotify",   "label": "Spotify",   "url": "https://open.spotify.com/artist/4u87G2qGOQ7vg0Zj1PA7cz" },
+    { "id": "youtube",   "label": "YouTube",   "url": "https://www.youtube.com/@tanhawmusic" },
+    { "id": "substack",  "label": "Substack",  "url": "https://tanhaw.substack.com/" },
+    { "id": "bandcamp",  "label": "Bandcamp",  "url": "https://tanhaw.bandcamp.com" }
+  ]
+}
