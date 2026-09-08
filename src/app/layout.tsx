@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   title: 'Tan Haw',
   description: 'Electronic Press Kit',
   metadataBase: new URL('https://tanhaw.com'),
+  icons: { icon: '/logo.svg' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

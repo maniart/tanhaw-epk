@@ -129,6 +129,11 @@
  *   2  heroSection, linksSection, footerEl — scrolling content
  */
 
+@keyframes cinematicZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.07); }
+}
+
 /* Mobile-only fixed photo — hidden on desktop */
 .mobileBg {
   display: none;
@@ -137,6 +142,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
+  animation: cinematicZoom 12s ease-out forwards;
 }
 
 /* Desktop-only photo inside hero — hidden on mobile */
@@ -145,6 +151,7 @@
   inset: 0;
   background-size: cover;
   background-repeat: no-repeat;
+  animation: cinematicZoom 12s ease-out forwards;
 }
 
 /* Fixed overlay: full-viewport gradient — no hard edge, darkens gradually from ~35% down */
@@ -197,6 +204,11 @@
 
 /* ─── Reduced motion ─── */
 @media (prefers-reduced-motion: reduce) {
+  .mobileBg,
+  .desktopBg {
+    animation: none;
+  }
+
   .linkBtn,
   .linkBtn::before,
   .linkBtn:hover .linkArrow,
