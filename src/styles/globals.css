@@ -6,12 +6,12 @@ html, body {
   margin: 0;
   padding: 0;
   background: #100E0C;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: var(--font-newsreader), Georgia, serif;
+  font-family: var(--font-instrument), Georgia, serif;
   color: #E4DED2;
-  overflow-x: hidden;
 }
 
 a {

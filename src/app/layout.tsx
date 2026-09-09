@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Bodoni_Moda, Newsreader, IBM_Plex_Mono } from 'next/font/google'
+import { Bodoni_Moda, Instrument_Serif, IBM_Plex_Mono } from 'next/font/google'
 import Script from 'next/script'
 import '../styles/globals.css'
 
@@ -13,11 +13,11 @@ const bodoni = Bodoni_Moda({
   display: 'swap',
 })
 
-const newsreader = Newsreader({
+const newsreader = Instrument_Serif({
   subsets: ['latin'],
-  weight: ['300', '400'],
+  weight: '400',
   style: ['normal', 'italic'],
-  variable: '--font-newsreader',
+  variable: '--font-instrument',
   display: 'swap',
 })
 

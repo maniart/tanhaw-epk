@@ -64,7 +64,7 @@ export default function EPKPage({ content }: { content: ResolvedContent }) {
   const lastContentGroupIndex = groups.findLastIndex((g) => !g.fullWidth)
 
   const inner = (
-    <div style={{ background: '#100E0C', color: '#E4DED2', fontFamily: "var(--font-newsreader), Georgia, serif", overflowX: 'hidden' }}>
+    <div style={{ background: '#100E0C', color: '#E4DED2', fontFamily: "var(--font-instrument), Georgia, serif", overflowX: 'hidden' }}>
       {groups.map((group, gi) => {
         if (group.fullWidth) {
           return group.keys.map((key) => (

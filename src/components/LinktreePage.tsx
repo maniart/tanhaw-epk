@@ -60,7 +60,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
       style={{
         background: '#100E0C',
         color: '#E4DED2',
-        fontFamily: "var(--font-newsreader), Georgia, serif",
+        fontFamily: "var(--font-instrument), Georgia, serif",
         minHeight: '100vh',
       }}
     >
@@ -125,6 +125,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
 
         {/* Center: name + bio + socials */}
         <div
+          className={styles.heroContent}
           style={{
             position: 'relative',
             flex: 1,
@@ -154,7 +155,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
 
           <p
             style={{
-              fontFamily: "var(--font-newsreader), Georgia, serif",
+              fontFamily: "var(--font-instrument), Georgia, serif",
               fontStyle: 'italic',
               fontWeight: 300,
               fontSize: 'clamp(16px,2vw,21px)',
@@ -197,7 +198,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
             position: 'relative',
             display: 'flex',
             justifyContent: 'center',
-            paddingBottom: 'clamp(28px,4vh,48px)',
+            marginTop: '20px',
           }}
           aria-hidden="true"
         >
