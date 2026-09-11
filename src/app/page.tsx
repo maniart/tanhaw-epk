@@ -8,7 +8,7 @@ const heroPhoto = getPhoto((linktreeData as LinktreeData).profile.heroPhoto)
 
 export const metadata: Metadata = {
   title: 'Tan Haw',
-  description: 'Mystic troubadour from Iran through Turtle Island •☽◯☾•',
+  description: 'Mystic troubadour from Iran by way of Turtle Island •☽◯☾•',
 }
 
 export default function HomePage() {
