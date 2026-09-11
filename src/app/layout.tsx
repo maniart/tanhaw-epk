@@ -31,7 +31,7 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: 'Tan Haw',
   description: 'Electronic Press Kit',
-  metadataBase: new URL('https://tanhaw.com'),
+  metadataBase: new URL('https://tanhaw.netlify.app'),
   icons: { icon: '/logo.svg' },
   openGraph: {
     images: [{ url: '/opengraph-thumbnail.jpg' }],
