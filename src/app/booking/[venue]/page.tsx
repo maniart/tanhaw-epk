@@ -16,11 +16,6 @@ export async function generateMetadata({
   return {
     title: content.variant.title,
     description: content.variant.description,
-    openGraph: {
-      title: content.variant.title,
-      description: content.variant.description,
-      images: [{ url: content.heroPhoto.src }],
-    },
   }
 }
 

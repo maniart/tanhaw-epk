@@ -9,11 +9,6 @@ const heroPhoto = getPhoto((linktreeData as LinktreeData).profile.heroPhoto)
 export const metadata: Metadata = {
   title: 'Tan Haw',
   description: 'Mystic troubadour from Iran through Turtle Island •☽◯☾•',
-  openGraph: {
-    title: 'Tan Haw',
-    description: 'Mystic troubadour from Iran through Turtle Island •☽◯☾•',
-    images: [{ url: heroPhoto.src }],
-  },
 }
 
 export default function HomePage() {
