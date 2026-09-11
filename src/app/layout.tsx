@@ -33,6 +33,13 @@ export const metadata: Metadata = {
   description: 'Electronic Press Kit',
   metadataBase: new URL('https://tanhaw.com'),
   icons: { icon: '/logo.svg' },
+  openGraph: {
+    images: [{ url: '/opengraph-thumbnail.jpg' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/opengraph-thumbnail.jpg'],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
