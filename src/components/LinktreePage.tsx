@@ -1,6 +1,7 @@
 import type { Photo, LinktreeData } from '@/lib/types'
 import styles from '@/styles/linktree.module.css'
 import TrackedLink from '@/components/TrackedLink'
+import HeroSection from '@/components/sections/HeroSection'
 
 /* ─── Social icon SVGs ─── */
 function SocialIcon({ id }: { id: string }) {
@@ -55,6 +56,13 @@ interface Props {
 export default function LinktreePage({ data, heroPhoto }: Props) {
   const { profile, sections, socials } = data
 
+  const nav = (
+    <nav style={{ display: 'flex', gap: '28px', alignItems: 'center' }} aria-label="Site navigation">
+      {/* <a href="/a-and-r" className={styles.navLink}>EPK</a> */}
+      <a href="/booking" className={styles.navLink}>Booking</a>
+    </nav>
+  )
+
   return (
     <div
       style={{
@@ -64,7 +72,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
         minHeight: '100vh',
       }}
     >
-      {/* ─── Mobile: fixed photo at root (z-index 0, root stacking context) ─── */}
+      {/* Mobile: fixed photo at root (z-index 0, root stacking context) */}
       <div
         className={styles.mobileBg}
         style={{ backgroundImage: `url('${heroPhoto.src}')`, backgroundPosition: heroPhoto.focal }}
@@ -72,57 +80,17 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
         aria-label={heroPhoto.alt}
       />
 
-      {/* ─── Mobile: fixed dark gradient overlay (z-index 1) ─── */}
+      {/* Mobile: fixed dark gradient overlay (z-index 1) */}
       <div className={styles.mobileOverlay} aria-hidden="true" />
 
-      {/* ─── Hero ─── */}
-      <section
-        className={styles.heroSection}
-        style={{
-          position: 'relative',
-          minHeight: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-        }}
+      {/* Hero — section bg hidden on mobile (mobileBg takes over) */}
+      <HeroSection
+        heroPhoto={heroPhoto}
+        nav={nav}
+        hideOnMobile
+        cinematicZoom
+        sectionClassName={styles.heroSection}
       >
-        {/* Desktop-only background photo (hidden on mobile) */}
-        <div
-          className={styles.desktopBg}
-          style={{
-            backgroundImage: `url('${heroPhoto.src}')`,
-            backgroundPosition: heroPhoto.focal,
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Scrims: same as HeroSection — top/bottom, clear middle */}
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(120% 78% at 50% 42%, rgba(16,14,12,0) 42%, rgba(16,14,12,0.55) 100%)' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(16,14,12,0.72) 0%, rgba(16,14,12,0.16) 26%, rgba(16,14,12,0.12) 46%, rgba(16,14,12,0.72) 78%, #100E0C 100%)' }} />
-
-        {/* Header row: logo + nav */}
-        <header
-          style={{
-            position: 'relative',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            padding: '28px clamp(20px,5vw,72px)',
-          }}
-        >
-          <img
-            src="/logo.svg"
-            alt="Tan Haw logotype"
-            style={{ height: '44px', width: 'auto', display: 'block' }}
-          />
-          <nav
-            style={{ display: 'flex', gap: '28px', alignItems: 'center' }}
-            aria-label="Site navigation"
-          >
-            <a href="/a-and-r" className={styles.navLink}>EPK</a>
-            <a href="/booking" className={styles.navLink}>Booking</a>
-          </nav>
-        </header>
-
         {/* Center: name + bio + socials */}
         <div
           className={styles.heroContent}
@@ -171,10 +139,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
           </p>
 
           {/* Social icons */}
-          <div
-            style={{ display: 'flex', gap: '4px', alignItems: 'center' }}
-            role="list"
-          >
+          <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }} role="list">
             {socials.map((s) => (
               <a
                 key={s.id}
@@ -206,7 +171,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
             <path d="M8 2v16M3 14l5 6 5-6" />
           </svg>
         </div>
-      </section>
+      </HeroSection>
 
       {/* ─── Links ─── */}
       <section

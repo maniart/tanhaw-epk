@@ -25,9 +25,8 @@
       { "label": "YouTube", "url": "https://www.youtube.com/@tanhawmusic" }
     ],
     "elsewhere": [
-      { "label": "linktr.ee/tanhaw", "url": "https://linktr.ee/tanhaw" },
       { "label": "Substack", "url": "https://tanhaw.substack.com/" },
-      { "label": "Instagram", "url": "https://linktr.ee/tanhaw" }
+      { "label": "Instagram", "url": "https://www.instagram.com/tan___haw" }
     ]
   },
   "press": {
@@ -56,6 +55,7 @@
       "caption": "Press 2024",
       "alt": "Tan Haw with set\u00e2r on the beach",
       "focal": "50% -60px",
+      "focalDesktop": "50% 32%",
       "downloadName": "Tan Haw - Press 2024 (beach setar).jpg"
     },
     {

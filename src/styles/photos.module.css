@@ -1,5 +1,38 @@
 .photoWrapper {
   position: relative;
+  overflow: hidden;
+}
+
+@keyframes cinematicZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.2); }
+}
+
+.heroBg {
+  background-position: var(--focal-mobile);
+}
+
+@media (min-width: 768px) {
+  .heroBg {
+    background-position: var(--focal-desktop);
+  }
+}
+
+/* Optional zoom animation (e.g. linktree hero) */
+.heroBgZoom {
+  animation: cinematicZoom 8s ease-out forwards;
+}
+
+/* Hide the section's own bg on mobile — used when an external fixed mobileBg
+   takes over (linktree). Prevents double-photo in the stacking context. */
+.heroBgHideMobile {
+  display: block; /* visible on desktop */
+}
+
+@media (max-width: 768px) {
+  .heroBgHideMobile {
+    display: none;
+  }
 }
 
 .downloadBtn {
@@ -45,9 +78,12 @@
   }
 }
 
-/* Reduced motion: remove fade */
+/* Reduced motion: remove fade and zoom */
 @media (prefers-reduced-motion: reduce) {
   .downloadBtn {
     transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .heroBgZoom {
+    animation: none;
   }
 }

@@ -5,6 +5,7 @@ export interface Photo {
   caption: string
   alt: string
   focal: string
+  focalDesktop?: string
   downloadName: string
 }
 
@@ -92,11 +93,23 @@ export interface Variant {
   videos: string[]
 }
 
+export interface StreamingLinks {
+  embed: string | null       // Spotify embed URL (iframe src)
+  spotify: string | null
+  appleMusic: string | null
+  soundcloud: string | null
+  tidal: string | null
+  amazonMusic: string | null
+  bandcamp: string | null
+}
+
 export interface LinktreeLink {
   id: string
   label: string
   sublabel: string | null
   url: string
+  thumbnail: string | null
+  streaming: StreamingLinks | null
 }
 
 export interface LinktreeSection {

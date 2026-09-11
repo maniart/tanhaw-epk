@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Tan Haw",
-    "bio": "Iranian classical roots, psychedelic and electronic futures.",
+    "bio": "Iranian classical roots, futures fusion soundscapes",
     "heroPhoto": "hero-setar-beach"
   },
   "sections": [
@@ -13,7 +13,9 @@
           "id": "bunna-cafe-sept-2025",
           "label": "September 19 — Bunna Cafe",
           "sublabel": "Brooklyn, NY",
-          "url": "https://www.bunnaethiopia.net/event-details/tan-haw"
+          "url": "https://www.bunnaethiopia.net/event-details/tan-haw",
+          "thumbnail": null,
+          "streaming": null
         }
       ]
     },
@@ -24,38 +26,74 @@
         {
           "id": "for-unidentified-body-spotify",
           "label": "For Unidentified Body 11780",
-          "sublabel": "Single — Spotify",
-          "url": "https://open.spotify.com/track/5vVPx8BIBbZz7n0h8RLZEr"
+          "sublabel": "Single",
+          "url": "https://open.spotify.com/track/5vVPx8BIBbZz7n0h8RLZEr",
+          "thumbnail": null,
+          "streaming": {
+            "embed": "https://open.spotify.com/embed/track/5vVPx8BIBbZz7n0h8RLZEr?utm_source=generator&theme=0",
+            "spotify": "https://open.spotify.com/track/5vVPx8BIBbZz7n0h8RLZEr",
+            "appleMusic": "https://music.apple.com/us/album/for-unidentified-body-11780-ep/1884217368",
+            "soundcloud": "https://soundcloud.com/tanhaw/01-for-unidentified-body-11780",
+            "tidal": "https://tidal.com/track/506033184",
+            "amazonMusic": "https://music.amazon.com/albums/B0GS4K4MQM?trackAsin=B0GS4719BP",
+            "bandcamp": "https://tanhaw.bandcamp.com/track/for-unidentified-body-11780"
+          }
         },
         {
           "id": "12-album-spotify",
           "label": "12",
-          "sublabel": "Album — Spotify",
-          "url": "https://open.spotify.com/album/5R2W0XrtZDUpx10BYgBrpe"
+          "sublabel": "Album",
+          "url": "https://open.spotify.com/album/5R2W0XrtZDUpx10BYgBrpe",
+          "thumbnail": null,
+          "streaming": {
+            "embed": "https://open.spotify.com/embed/album/5R2W0XrtZDUpx10BYgBrpe?utm_source=generator&theme=0",
+            "spotify": "https://open.spotify.com/album/5R2W0XrtZDUpx10BYgBrpe",
+            "appleMusic": "https://music.apple.com/us/album/12-single/1848515328",
+            "soundcloud": "https://soundcloud.com/tanhaw/twelve",
+            "tidal": null,
+            "amazonMusic": "https://music.amazon.com/albums/B0FXRG7614?trackAsin=B0FXRGG31Y",
+            "bandcamp": "https://tanhaw.bandcamp.com/track/12"
+          }
         },
         {
           "id": "las-bugambilias-spotify",
           "label": "Las Bugambilias Vol. 1",
-          "sublabel": "Album — Spotify",
-          "url": "https://open.spotify.com/album/7JncPAm8xXRA7bOnBYG4wg"
+          "sublabel": "Album",
+          "url": "https://open.spotify.com/album/7JncPAm8xXRA7bOnBYG4wg",
+          "thumbnail": null,
+          "streaming": {
+            "embed": "https://open.spotify.com/embed/album/7JncPAm8xXRA7bOnBYG4wg?utm_source=generator&theme=0",
+            "spotify": "https://open.spotify.com/album/7JncPAm8xXRA7bOnBYG4wg",
+            "appleMusic": "https://music.apple.com/us/album/las-bugambilias-vol-1-nav\u00e2ei-single/1789322118",
+            "soundcloud": null,
+            "tidal": "https://tidal.com/album/410260121",
+            "amazonMusic": "https://music.amazon.com/albums/B0DSJJGDRH",
+            "bandcamp": "https://tanhaw.bandcamp.com/album/las-bugambilias-vol-1-nav-ei"
+          }
         },
         {
           "id": "bandcamp",
           "label": "Bandcamp",
           "sublabel": "Full discography",
-          "url": "https://tanhaw.bandcamp.com/"
+          "url": "https://tanhaw.bandcamp.com/",
+          "thumbnail": null,
+          "streaming": null
         },
         {
           "id": "spotify-artist",
           "label": "Spotify",
           "sublabel": "Artist profile",
-          "url": "https://open.spotify.com/artist/4u87G2qGOQ7vg0Zj1PA7cz"
+          "url": "https://open.spotify.com/artist/4u87G2qGOQ7vg0Zj1PA7cz",
+          "thumbnail": null,
+          "streaming": null
         },
         {
           "id": "soundcloud",
           "label": "SoundCloud",
           "sublabel": "Free listening",
-          "url": "https://soundcloud.com/tanhaw"
+          "url": "https://soundcloud.com/tanhaw",
+          "thumbnail": null,
+          "streaming": null
         }
       ]
     },
@@ -67,19 +105,25 @@
           "id": "bandcamp-daily-big-ups",
           "label": "Big Ups — Bandcamp Daily",
           "sublabel": "Cyrus Moussavi of Mississippi Records",
-          "url": "https://daily.bandcamp.com/big-ups/cyrus-moussavi-mississippi-records-iran-music"
+          "url": "https://daily.bandcamp.com/big-ups/cyrus-moussavi-mississippi-records-iran-music",
+          "thumbnail": null,
+          "streaming": null
         },
         {
           "id": "mississippi-records-interview",
           "label": "Interview with Mississippi Records",
           "sublabel": null,
-          "url": "https://www.mississippirecords.net/campaigns/view-campaign/wBrg7td2fOwKQi6iizyxoDDRecMgS3BLUgZ7vnt_HaeoWddzLEJDjZaXyiD8LGhn4Wfpu6tpfyF2iHJW4TyDRST8T5dWREru"
+          "url": "https://www.mississippirecords.net/campaigns/view-campaign/wBrg7td2fOwKQi6iizyxoDDRecMgS3BLUgZ7vnt_HaeoWddzLEJDjZaXyiD8LGhn4Wfpu6tpfyF2iHJW4TyDRST8T5dWREru",
+          "thumbnail": null,
+          "streaming": null
         },
         {
           "id": "substack",
           "label": "Substack Newsletter",
           "sublabel": null,
-          "url": "https://tanhaw.substack.com/profile/posts"
+          "url": "https://tanhaw.substack.com/profile/posts",
+          "thumbnail": null,
+          "streaming": null
         }
       ]
     },
@@ -91,13 +135,17 @@
           "id": "remix-culture-ep",
           "label": "EP with Remix ⟷ Culture",
           "sublabel": "Sparrow Bush, USA — Oct 2022",
-          "url": "https://remixculture.bandcamp.com/album/sparrow-bush-usa-oct-2022"
+          "url": "https://remixculture.bandcamp.com/album/sparrow-bush-usa-oct-2022",
+          "thumbnail": null,
+          "streaming": null
         },
         {
           "id": "remix-culture-sample-pack",
           "label": "Sample Pack with Remix ⟷ Culture",
           "sublabel": null,
-          "url": "https://www.remix-culture.org/mani"
+          "url": "https://www.remix-culture.org/mani",
+          "thumbnail": null,
+          "streaming": null
         }
       ]
     },
@@ -109,7 +157,9 @@
           "id": "youtube",
           "label": "YouTube",
           "sublabel": "@tanhawmusic",
-          "url": "https://www.youtube.com/@tanhawmusic"
+          "url": "https://www.youtube.com/@tanhawmusic",
+          "thumbnail": null,
+          "streaming": null
         }
       ]
     }
