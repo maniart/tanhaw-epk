@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude -p \"Review this session's conversation and update /Users/mani/.claude/projects/-Users-mani-Workspace-tan-haw-epk/memory/MEMORY.md with any new stable facts about the project — new data shapes, architectural decisions, conventions established, open items resolved, or new files/components added. Keep the file under 200 lines. Do not write session-specific context, in-progress task state, or speculative notes. If nothing meaningful changed, leave the file as-is.\""
+          }
+        ]
+      }
+    ]
+  }
+}
