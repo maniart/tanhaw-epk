@@ -1,2 +1,6 @@
 name = "tan-haw-epk"
+compatibility_date = "2026-09-16"
 pages_build_output_dir = "out"
+
+[assets]
+directory = "./out"
