@@ -181,10 +181,10 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
         }}
       >
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          {sections.map((section, si) => (
+          {sections.filter((s) => s.links.length > 0).map((section, si, arr) => (
             <div
               key={section.id}
-              style={{ marginBottom: si < sections.length - 1 ? 'clamp(48px,8vh,80px)' : 0 }}
+              style={{ marginBottom: si < arr.length - 1 ? 'clamp(48px,8vh,80px)' : 0 }}
             >
               <span className={styles.sectionLabel}>{section.label}</span>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
