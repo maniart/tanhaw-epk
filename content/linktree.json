@@ -8,16 +8,7 @@
     {
       "id": "live",
       "label": "Live",
-      "links": [
-        {
-          "id": "bunna-cafe-sept-2025",
-          "label": "September 19 — Bunna Cafe",
-          "sublabel": "Brooklyn, NY",
-          "url": "https://www.bunnaethiopia.net/event-details/tan-haw",
-          "thumbnail": null,
-          "streaming": null
-        }
-      ]
+      "links": []
     },
     {
       "id": "music",
