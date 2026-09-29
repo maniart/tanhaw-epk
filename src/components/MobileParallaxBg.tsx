@@ -27,7 +27,7 @@ export default function MobileParallaxBg({ src, focal, alt }: Props) {
       // Capture baseline on first reading
       if (baseGamma === null) {
         baseGamma = e.gamma
-        baseBeta = e.beta!
+        baseBeta = e.beta
         return
       }
 
@@ -42,7 +42,27 @@ export default function MobileParallaxBg({ src, focal, alt }: Props) {
       })
     }
 
-    window.addEventListener('deviceorientation', handler, { passive: true })
+    const startListening = () => {
+      window.addEventListener('deviceorientation', handler, { passive: true })
+    }
+
+    // iOS 13+ requires explicit user-gesture permission
+    type DOEWithPermission = typeof DeviceOrientationEvent & {
+      requestPermission: () => Promise<'granted' | 'denied'>
+    }
+    if (typeof (DeviceOrientationEvent as DOEWithPermission).requestPermission === 'function') {
+      const requestOnTouch = () => {
+        ;(DeviceOrientationEvent as DOEWithPermission)
+          .requestPermission()
+          .then((state) => { if (state === 'granted') startListening() })
+          .catch(() => {})
+      }
+      document.addEventListener('touchstart', requestOnTouch, { once: true, passive: true })
+      return () => document.removeEventListener('touchstart', requestOnTouch)
+    }
+
+    // Android / non-iOS: no permission needed
+    startListening()
     return () => {
       window.removeEventListener('deviceorientation', handler)
       cancelAnimationFrame(rafId)
