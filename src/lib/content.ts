@@ -6,7 +6,7 @@ import sharedData from '../../content/shared.json'
 import tracksData from '../../content/tracks.json'
 import ensemblesData from '../../content/ensembles.json'
 import venuesData from '../../content/venues.json'
-import aAndRVariant from '../../content/variants/a-and-r.json'
+import previewVariant from '../../content/variants/preview.json'
 import bookersVariant from '../../content/variants/bookers.json'
 import venuePagesData from '../../content/venue-pages.json'
 
@@ -17,7 +17,7 @@ const VALID_SECTIONS = new Set([
 ])
 
 const VARIANT_MAP: Record<string, Variant> = {
-  'a-and-r': aAndRVariant as Variant,
+  preview: previewVariant as Variant,
   bookers: bookersVariant as Variant,
 }
 
