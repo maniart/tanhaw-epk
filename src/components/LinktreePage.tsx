@@ -2,6 +2,7 @@ import type { Photo, LinktreeData } from '@/lib/types'
 import styles from '@/styles/linktree.module.css'
 import TrackedLink from '@/components/TrackedLink'
 import HeroSection from '@/components/sections/HeroSection'
+import MobileParallaxBg from '@/components/MobileParallaxBg'
 
 /* ─── Social icon SVGs ─── */
 function SocialIcon({ id }: { id: string }) {
@@ -73,12 +74,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
       }}
     >
       {/* Mobile: fixed photo at root (z-index 0, root stacking context) */}
-      <div
-        className={styles.mobileBg}
-        style={{ backgroundImage: `url('${heroPhoto.src}')`, backgroundPosition: heroPhoto.focal }}
-        role="img"
-        aria-label={heroPhoto.alt}
-      />
+      <MobileParallaxBg src={heroPhoto.src} focal={heroPhoto.focal} alt={heroPhoto.alt} />
 
       {/* Mobile: fixed dark gradient overlay (z-index 1) */}
       <div className={styles.mobileOverlay} aria-hidden="true" />
