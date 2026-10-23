@@ -151,3 +151,14 @@ export interface ResolvedContent {
   gridPhotos: Photo[]
   orderedTracks: Array<{ id: string; track: Track }>
 }
+
+export interface Episode {
+  id: string       // zero-padded string: "001", "002", …
+  title: string    // shown in the player bar
+  url: string      // direct HTTPS URL to the MP3
+  date: string     // ISO date string: "2026-10-21" (informational only)
+}
+
+export interface RadioManifest {
+  episodes: Episode[]
+}
