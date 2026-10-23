@@ -124,6 +124,17 @@ export default function RadioPlayer() {
     return () => audio.removeEventListener('ended', handleEnded)
   }, [handleEnded])
 
+  // Cleanup on unmount
+  useEffect(() => {
+    const audio = audioRef.current
+    return () => {
+      if (audio) {
+        audio.pause()
+        audio.src = ''
+      }
+    }
+  }, [])
+
   // Controls
   function handlePlayPause() {
     const audio = audioRef.current

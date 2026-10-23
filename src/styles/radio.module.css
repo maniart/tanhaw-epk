@@ -220,3 +220,8 @@
   .liveDotPulsing { animation: none; }
   .playBtn, .iconBtn, .whatsappLink { transition: none; }
 }
+
+/* ─── Print (rider pages) ─── */
+@media print {
+  .bar { display: none; }
+}
