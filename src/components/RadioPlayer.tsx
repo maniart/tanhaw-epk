@@ -6,7 +6,9 @@ import styles from '@/styles/radio.module.css'
 
 const MANIFEST_URL = process.env.NEXT_PUBLIC_RADIO_MANIFEST_URL ?? ''
 
-// ── Replace with the actual WhatsApp channel invite link ──────────────────────
+// ── WhatsApp channel invite link ─────────────────────────────────────────────
+// To find the invite link: WhatsApp → your channel → Info → Invite link
+// Replace the placeholder below with the actual invite code when available.
 const WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/REPLACE_WITH_YOUR_INVITE_CODE'
 // ─────────────────────────────────────────────────────────────────────────────
 
