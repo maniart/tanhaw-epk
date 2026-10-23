@@ -12,6 +12,7 @@ html, body {
 body {
   font-family: var(--font-instrument), Georgia, serif;
   color: #E4DED2;
+  padding-bottom: 56px;
 }
 
 a {

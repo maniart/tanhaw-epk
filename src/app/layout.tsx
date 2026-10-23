@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Bodoni_Moda, Instrument_Serif, IBM_Plex_Mono } from 'next/font/google'
 import Script from 'next/script'
 import '../styles/globals.css'
+import RadioPlayer from '@/components/RadioPlayer'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
@@ -45,18 +46,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bodoni.variable} ${newsreader.variable} ${mono.variable}`}>
-      <body>{children}</body>
-      {GA_ID && (
-        <>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-          <Script id="ga-init" strategy="afterInteractive">{`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `}</Script>
-        </>
-      )}
+      <body>
+        {children}
+        {GA_ID && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+            <Script id="ga-init" strategy="afterInteractive">{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `}</Script>
+          </>
+        )}
+        <RadioPlayer />
+      </body>
     </html>
   )
 }
