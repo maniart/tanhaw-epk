@@ -218,17 +218,16 @@
 
 /* ─── Mobile (≤ 768px) ─── */
 @media (max-width: 768px) {
-  .left      { padding: 0 14px 0 16px; gap: 6px; }
-  .center    { padding: 0 12px; }
-  .right     { padding: 0 14px 0 10px; gap: 6px; }
+  /* Shrink left to dot only — marquee carries the station identity */
+  .left         { padding: 0 12px 0 14px; gap: 0; }
+  .stationLabel { display: none; }
+  .center       { padding: 0 10px; }
+  .right        { padding: 0 14px 0 8px; gap: 2px; }
 
   .episodeNum    { display: none; }
   .scheduleInfo  { display: none; }
   .divider       { display: none; }
   .whatsappLabel { display: none; }
-
-  /* Hide prev/next on mobile — play/pause is the primary control */
-  .iconBtn { display: none; }
 }
 
 /* ─── Reduced motion ─── */
