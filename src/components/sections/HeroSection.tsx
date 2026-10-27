@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { ResolvedContent, Photo } from '@/lib/types'
 import styles from '@/styles/photos.module.css'
 import layout from '@/styles/layout.module.css'
@@ -105,13 +106,13 @@ export default function HeroSection({
 
       {/* Header: logotype + optional nav/badge */}
       <header style={headerStyle}>
-        <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
           <img
             src="/logo.svg"
             alt="Tan Haw logotype"
             style={{ height: '44px', width: 'auto', display: 'block' }}
           />
-        </a>
+        </Link>
         {nav}
       </header>
 

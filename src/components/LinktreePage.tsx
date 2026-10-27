@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Photo, LinktreeData } from '@/lib/types'
 import styles from '@/styles/linktree.module.css'
 import TrackedLink from '@/components/TrackedLink'
@@ -58,8 +59,8 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
 
   const nav = (
     <nav style={{ display: 'flex', gap: '28px', alignItems: 'center' }} aria-label="Site navigation">
-      {/* <a href="/a-and-r" className={styles.navLink}>EPK</a> */}
-      <a href="/booking" className={styles.navLink}>Booking</a>
+      {/* <Link href="/preview" className={styles.navLink}>EPK</Link> */}
+      <Link href="/booking" className={styles.navLink}>Booking</Link>
     </nav>
   )
 
