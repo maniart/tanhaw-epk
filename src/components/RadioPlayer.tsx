@@ -12,6 +12,13 @@ const MANIFEST_URL = process.env.NEXT_PUBLIC_RADIO_MANIFEST_URL ?? ''
 const WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/REPLACE_WITH_YOUR_INVITE_CODE'
 // ─────────────────────────────────────────────────────────────────────────────
 
+/* ── Date formatter ── */
+function formatEpisodeDate(isoDate: string): string {
+  // Append time to force local parsing and avoid UTC date shift
+  const d = new Date(isoDate + 'T00:00:00')
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+}
+
 /* ── Live indicator ── */
 function getIsLive(): boolean {
   const now = new Date()
@@ -196,18 +203,27 @@ export default function RadioPlayer() {
         )}
       </div>
 
-      {/* Center: episode info */}
+      {/* Center: marquee when loaded, placeholder otherwise */}
       <div className={styles.center}>
         {loadError ? (
           <span className={styles.episodePlaceholder} role="status">unable to load</span>
         ) : !hasEpisodes ? (
           <span className={styles.episodePlaceholder} aria-label="Loading">—</span>
-        ) : (
-          <>
-            <span className={styles.episodeNum} aria-hidden="true">Ep {currentEpisode?.id}</span>
-            <span className={styles.episodeTitle}>{currentEpisode?.title}</span>
-          </>
-        )}
+        ) : (() => {
+          const ep = currentEpisode!
+          const text = `Radio Tan Haw\u00A0\u00A0•\u00A0\u00A0Episode ${ep.id}\u00A0\u00A0•\u00A0\u00A0${ep.title}\u00A0\u00A0•\u00A0\u00A0Airing: ${formatEpisodeDate(ep.date)}`
+          const gap = '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'
+          return (
+            <span
+              key={currentIndex}
+              className={styles.marqueeTrack}
+              aria-label={text}
+            >
+              <span aria-hidden="true">{text}{gap}</span>
+              <span aria-hidden="true">{text}{gap}</span>
+            </span>
+          )
+        })()}
       </div>
 
       {/* Right: controls + WhatsApp */}
@@ -242,7 +258,7 @@ export default function RadioPlayer() {
         <span className={styles.divider} aria-hidden="true" />
 
         <a
-          href={WHATSAPP_CHANNEL_URL}
+          href={"https://chat.whatsapp.com/JPIwhPOgYFKAbESH5KG5aG"}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.whatsappLink}
