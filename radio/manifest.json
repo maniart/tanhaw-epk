@@ -1,0 +1,46 @@
+{
+    "episodes": [
+      {
+        "id": "000",
+        "title": "Arrival",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20000%20%5BArrival%5D%20%E2%80%94%209.29.2026.mp3",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "001",
+        "title": "Descanso",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20001%20%5BDescanso%5D%20%E2%80%94%2010.02.2026.mp3",
+        "date": "2026-10-02"
+      },
+      {
+        "id": "002",
+        "title": "Passage",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20002%20%5BPassage%5D%20%E2%80%94%2010.06.2026.mp3",
+        "date": "2026-10-06"
+      },
+      {
+        "id": "003",
+        "title": "Doubt",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20003%20%5BDoubt%5D%20%E2%80%94%2010.13.2026.mp3",
+        "date": "2026-10-13"
+      },
+      {
+        "id": "004",
+        "title": "Desert",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20004%20%5BDesert%5D%20%E2%80%94%2010.15.2026.mp3",
+        "date": "2026-10-15"
+      },
+      {
+        "id": "005",
+        "title": "Gardner",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20005%20%5BGardner%5D%20%E2%80%94%2010.20.2026.mp3",
+        "date": "2026-10-20"
+      },
+      {
+        "id": "006",
+        "title": "Remembering",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20006%20%5BRemembering%5D%20%E2%80%94%2010.22.2026.mp3",
+        "date": "2026-10-22"
+      }
+    ]
+  }
