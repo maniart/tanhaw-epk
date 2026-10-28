@@ -63,7 +63,19 @@ export default function RadioArchivePage() {
 
   return (
     <div className={styles.page}>
+      {/* Video background */}
+      <video
+        className={styles.videoBg}
+        src="/radio-bg-1.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+      />
+      <div className={styles.videoOverlay} aria-hidden="true" />
 
+      <div className={styles.pageContent}>
       {/* Top bar */}
       <div className={styles.topBar}>
         <Link href="/" className={styles.backLink}>
@@ -108,6 +120,7 @@ export default function RadioArchivePage() {
           })}
         </ul>
       )}
+      </div>
     </div>
   )
 }

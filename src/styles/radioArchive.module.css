@@ -1,8 +1,33 @@
 .page {
+  position: relative;
   background: #100E0C;
   color: #E4DED2;
   min-height: 100vh;
   font-family: var(--font-instrument), Georgia, serif;
+}
+
+/* ─── Fullscreen video background ─── */
+.videoBg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.videoOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 14, 12, 0.72);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pageContent {
+  position: relative;
+  z-index: 2;
 }
 
 /* ─── Top bar ─── */
