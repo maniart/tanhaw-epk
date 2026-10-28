@@ -95,6 +95,9 @@ export default function RadioPlayer() {
         const manifest = data as { episodes?: Episode[] }
         if (Array.isArray(manifest?.episodes) && manifest.episodes.length > 0) {
           setEpisodes(manifest.episodes)
+          if (getIsLive()) {
+            setCurrentIndex(manifest.episodes.length - 1)
+          }
         } else {
           setLoadError(true)
         }
