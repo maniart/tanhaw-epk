@@ -1,0 +1,176 @@
+.page {
+  background: #100E0C;
+  color: #E4DED2;
+  min-height: 100vh;
+  font-family: var(--font-instrument), Georgia, serif;
+}
+
+/* ─── Top bar ─── */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px clamp(20px, 5vw, 72px);
+  border-bottom: 1px solid rgba(228, 222, 210, 0.06);
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7C7266;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.backLink:hover {
+  color: #E4DED2;
+}
+
+/* ─── Heading ─── */
+.heading {
+  padding: clamp(40px, 6vh, 72px) clamp(20px, 5vw, 72px) clamp(24px, 4vh, 48px);
+  border-bottom: 1px solid rgba(228, 222, 210, 0.06);
+}
+
+.headingLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7C7266;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.headingTitle {
+  font-family: var(--font-bodoni), 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: clamp(40px, 8vw, 96px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #E4DED2;
+}
+
+/* ─── Episode list ─── */
+.list {
+  padding: 0 clamp(20px, 5vw, 72px) clamp(80px, 12vh, 120px);
+}
+
+/* ─── Episode row ─── */
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(228, 222, 210, 0.06);
+  cursor: pointer;
+  background: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  width: 100%;
+  text-align: left;
+  color: #E4DED2;
+  transition: background 0.18s ease;
+}
+
+/* Left ember bar — scales in on hover / active */
+.row::before {
+  content: '';
+  position: absolute;
+  left: -clamp(20px, 5vw, 72px);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #C4553A;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.18s ease;
+}
+
+.row:hover::before,
+.rowActive::before {
+  transform: scaleY(1);
+}
+
+.row:hover,
+.rowActive {
+  background: rgba(196, 85, 58, 0.04);
+}
+
+.epNum {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5E564C;
+  flex-shrink: 0;
+  width: 44px;
+}
+
+.rowActive .epNum {
+  color: #C4553A;
+}
+
+.epTitle {
+  flex: 1;
+  font-family: var(--font-instrument), Georgia, serif;
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: #E4DED2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.epDate {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7C7266;
+  flex-shrink: 0;
+}
+
+.playIcon {
+  flex-shrink: 0;
+  color: #5E564C;
+  display: flex;
+  align-items: center;
+  transition: color 0.18s ease;
+}
+
+.row:hover .playIcon {
+  color: #B5AC9E;
+}
+
+.rowActive .playIcon {
+  color: #C4553A;
+}
+
+/* ─── Loading / error ─── */
+.status {
+  padding: clamp(40px, 6vh, 72px) clamp(20px, 5vw, 72px);
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #5E564C;
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .epDate { display: none; }
+  .epNum  { width: 36px; }
+}
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .row::before, .row, .backLink, .playIcon { transition: none; }
+}

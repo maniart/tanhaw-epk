@@ -60,6 +60,7 @@ export default function LinktreePage({ data, heroPhoto }: Props) {
   const nav = (
     <nav style={{ display: 'flex', gap: '28px', alignItems: 'center' }} aria-label="Site navigation">
       {/* <Link href="/preview" className={styles.navLink}>EPK</Link> */}
+      <Link href="/radio" className={styles.navLink}>Radio</Link>
       <Link href="/booking" className={styles.navLink}>Booking</Link>
     </nav>
   )

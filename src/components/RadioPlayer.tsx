@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react'
 import type { Episode } from '@/lib/types'
 import styles from '@/styles/radio.module.css'
+import { notifyIndexChange, onRequestPlay } from '@/lib/radioEvents'
 
 const MANIFEST_URL = process.env.NEXT_PUBLIC_RADIO_MANIFEST_URL ?? ''
 
@@ -118,6 +119,7 @@ export default function RadioPlayer() {
         shouldAutoPlayRef.current = false
         setPlaying(false)
       })
+      setPlaying(true)
     }
   }, [currentIndex, episodes])
 
@@ -133,6 +135,21 @@ export default function RadioPlayer() {
     audio.addEventListener('ended', handleEnded)
     return () => audio.removeEventListener('ended', handleEnded)
   }, [handleEnded])
+
+  // Broadcast index changes so archive page can highlight current row
+  useEffect(() => {
+    notifyIndexChange(currentIndex)
+  }, [currentIndex])
+
+  // Listen for play requests from archive page
+  useEffect(() => {
+    return onRequestPlay((index) => {
+      if (episodes.length === 0 || index < 0 || index >= episodes.length) return
+      shouldAutoPlayRef.current = true
+      setPlaying(true)
+      setCurrentIndex(index)
+    })
+  }, [episodes.length])
 
   // Cleanup on unmount
   useEffect(() => {
