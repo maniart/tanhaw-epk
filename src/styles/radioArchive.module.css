@@ -113,6 +113,7 @@
   color: #5E564C;
   flex-shrink: 0;
   width: 44px;
+  margin-left: 8px;
 }
 
 .rowActive .epNum {
@@ -136,7 +137,6 @@
   text-transform: uppercase;
   color: #7C7266;
   flex-shrink: 0;
-  margin-left: 8px;
 }
 
 .playIcon {
