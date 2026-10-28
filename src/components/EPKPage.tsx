@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { ResolvedContent } from '@/lib/types'
 import { EnsembleProvider } from '@/components/EnsembleContext'
 
@@ -16,9 +17,17 @@ import ContactSection from './sections/ContactSection'
 
 const FULL_WIDTH_SECTIONS = new Set(['hero', 'press'])
 
+function EPKNav() {
+  return (
+    <nav style={{ display: 'flex', gap: '28px', alignItems: 'center' }} aria-label="Site navigation">
+      <Link href="/radio" style={{ fontFamily: 'var(--font-mono), monospace', fontSize: '11px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C0B8AC', textDecoration: 'none' }}>Radio</Link>
+    </nav>
+  )
+}
+
 function renderSection(key: string, content: ResolvedContent) {
   switch (key) {
-    case 'hero':          return <HeroSection content={content} />
+    case 'hero':          return <HeroSection content={content} nav={<EPKNav />} />
     case 'featuredTrack': return <FeaturedTrackSection content={content} />
     case 'bio':           return <BioSection content={content} />
     case 'music':         return <MusicSection content={content} />
