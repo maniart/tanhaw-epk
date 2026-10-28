@@ -136,6 +136,7 @@
   text-transform: uppercase;
   color: #7C7266;
   flex-shrink: 0;
+  margin-left: 8px;
 }
 
 .playIcon {
