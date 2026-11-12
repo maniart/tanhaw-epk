@@ -1,33 +1,9 @@
 import type { Metadata } from 'next'
-import { Bodoni_Moda, Instrument_Serif, IBM_Plex_Mono } from 'next/font/google'
 import Script from 'next/script'
 import '../styles/globals.css'
 import RadioPlayer from '@/components/RadioPlayer'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
-
-const bodoni = Bodoni_Moda({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  style: ['normal', 'italic'],
-  variable: '--font-bodoni',
-  display: 'swap',
-})
-
-const newsreader = Instrument_Serif({
-  subsets: ['latin'],
-  weight: '400',
-  style: ['normal', 'italic'],
-  variable: '--font-instrument',
-  display: 'swap',
-})
-
-const mono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-mono',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Tan Haw',
@@ -45,7 +21,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${bodoni.variable} ${newsreader.variable} ${mono.variable}`}>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+        />
+      </head>
       <body>
         {children}
         {GA_ID && (

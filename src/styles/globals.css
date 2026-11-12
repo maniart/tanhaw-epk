@@ -1,3 +1,9 @@
+:root {
+  --font-bodoni: 'Bodoni Moda';
+  --font-instrument: 'Instrument Serif';
+  --font-mono: 'IBM Plex Mono';
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
