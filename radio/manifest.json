@@ -47,6 +47,30 @@
         "title": "Four Doors",
         "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20007%20%5BFour%20doors%5D%20%E2%80%94%2010.27.2026.mp3",
         "date": "2026-10-27"
+      },
+      {
+        "id": "008",
+        "title": "Ambiguity",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20008%20%5BAmbiguity%5D%20%E2%80%94%2010.29.2026.mp3",
+        "date": "2026-10-29"
+      },
+      {
+        "id": "009",
+        "title": "Half of the World",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20009%20%5BHalf%20of%20the%20World%5D%20%E2%80%94%2011.03.2026.mp3",
+        "date": "2026-11-03"
+      },
+      {
+        "id": "010",
+        "title": "Despite it All",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20010%20%5BDespite%20it%20All%5D%20%E2%80%94%2011.05.2026.mp3",
+        "date": "2026-11-05"
+      },
+      {
+        "id": "011",
+        "title": "Autumn Wind",
+        "url": "https://pub-debd326942e84ea8a8f47f1a2552a7fd.r2.dev/radio/EP%20011%20%5BAutumn%20Wind%5D%20%E2%80%94%2011.10.2026.mp3",
+        "date": "2026-11-10"
       }
     ]
   }
